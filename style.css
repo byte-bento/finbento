@@ -123,3 +123,64 @@ body.focus-mode .site-header {
 .focus-button:hover {
   background-color: #0d376e;
 }
+
+/* Toggle bar styles */
+.toggle-bar {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.toggle-bar button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toggle-bar button:hover {
+  background-color: #ddd;
+}
+
+/* DARK MODE 🌙 */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #ddd;
+}
+
+body.dark-mode .site-header {
+  background-color: #2a2a2a;
+  border-color: #444;
+}
+
+body.dark-mode .card {
+  background-color: #2e2e2e;
+  border-color: #444;
+}
+
+body.dark-mode a {
+  color: #80c0ff;
+}
+
+body.dark-mode a:hover {
+  color: #66ccaa;
+}
+
+body.dark-mode .filter-button {
+  background-color: #444;
+  border-color: #666;
+  color: #eee;
+}
+
+body.dark-mode .filter-button:hover {
+  background-color: #555;
+}
+
+body.dark-mode .filter-button.active {
+  background-color: #80c0ff;
+  color: #000;
+  border-color: #80c0ff;
+}

@@ -31,11 +31,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     container.innerHTML = `<p>Failed to load news: ${err.message}</p>`;
   }
 
-  // ✅ Add Focus Mode toggle here
+  // ✅ Focus Mode toggle
   const focusToggle = document.getElementById('focus-toggle');
   if (focusToggle) {
     focusToggle.addEventListener('click', () => {
       document.body.classList.toggle('focus-mode');
+    });
+  }
+
+  // 🌙 Dark Mode toggle
+  const darkToggle = document.getElementById('dark-mode-toggle');
+  if (darkToggle) {
+    darkToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
     });
   }
 });
