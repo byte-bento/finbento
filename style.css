@@ -26,7 +26,7 @@ body {
   background: #f7f7f7;
   color: #222;
   line-height: 1.6;
-  
+
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
@@ -75,6 +75,15 @@ a:hover {
 .summary {
   font-size: 1rem;
   color: #444;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+/* standard property fallback */
+  line-clamp: 3;
+  box-orient: vertical;
 }
 
 .filter-bar {
