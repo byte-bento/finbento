@@ -1,22 +1,41 @@
 body {
-  margin: 0;
   font-family: system-ui, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  margin: 2rem;
+  background: #f7f7f7;
+  color: #222;
   line-height: 1.6;
+}
+
+a {
+  color: #114488;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
   padding: 1rem;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  transition: box-shadow 0.2s ease;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 2rem;
+.card:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-h1 {
-  margin-bottom: 0.2rem;
+.source {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.3rem;
+  margin-bottom: 0.6rem;
 }
 
-#news-container {
-  display: grid;
-  gap: 1rem;
+.summary {
+  font-size: 1rem;
+  color: #444;
 }
