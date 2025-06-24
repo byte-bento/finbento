@@ -1,3 +1,23 @@
+.site-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #f0f2f5;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2rem;
+}
+
+.site-header h1 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+  color: #114488;
+}
+
+.site-header p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
 body {
   font-family: system-ui, sans-serif;
   margin: 2rem;
