@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     container.innerHTML = articles.map(article => `
-      <article class="card">
+      <article class="card" data-source="${article.source}">
         <h2><a href="${article.link}" target="_blank" rel="noopener">${article.title}</a></h2>
         <p class="source">
           ${article.source}
@@ -24,7 +24,33 @@ document.addEventListener("DOMContentLoaded", async () => {
         <p class="summary">${article.description || ''}</p>
       </article>
     `).join('');
+
+    setupFiltering();
+
   } catch (err) {
     container.innerHTML = `<p>Failed to load news: ${err.message}</p>`;
   }
 });
+
+function setupFiltering() {
+  const buttons = document.querySelectorAll('.filter-button');
+  const articles = document.querySelectorAll('.card');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const selected = button.dataset.source.toLowerCase();
+
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      articles.forEach(article => {
+        const articleSource = article.dataset.source.toLowerCase();
+        if (selected === 'all' || articleSource === selected) {
+          article.style.display = '';
+        } else {
+          article.style.display = 'none';
+        }
+      });
+    });
+  });
+}
