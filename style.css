@@ -103,3 +103,23 @@ a:hover {
 body.focus-mode .site-header {
   display: none;
 }
+
+.focus-toggle-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.focus-button {
+  background-color: #114488;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.focus-button:hover {
+  background-color: #0d376e;
+}

@@ -30,6 +30,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   } catch (err) {
     container.innerHTML = `<p>Failed to load news: ${err.message}</p>`;
   }
+
+  // ✅ Add Focus Mode toggle here
+  const focusToggle = document.getElementById('focus-toggle');
+  if (focusToggle) {
+    focusToggle.addEventListener('click', () => {
+      document.body.classList.toggle('focus-mode');
+    });
+  }
 });
 
 function setupFiltering() {
