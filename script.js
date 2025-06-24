@@ -13,7 +13,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     container.innerHTML = articles.map(article => `
       <article class="card">
         <h2><a href="${article.link}" target="_blank" rel="noopener">${article.title}</a></h2>
-        <p class="source">${article.source}${article.pubDate ? ` — ${new Date(article.pubDate).toLocaleDateString()}` : ''}</p>
+        <p class="source">
+          ${article.source}
+          ${article.pubDate ? ` — ${new Date(article.pubDate).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          })}` : ''}
+        </p>
         <p class="summary">${article.description || ''}</p>
       </article>
     `).join('');
