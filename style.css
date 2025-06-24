@@ -98,3 +98,8 @@ a:hover {
   color: #fff;
   border-color: #114488;
 }
+
+/* Focus Mode — hides header only */
+body.focus-mode .site-header {
+  display: none;
+}
