@@ -251,3 +251,48 @@ body.dark-mode .filter-button.active {
   color: #000;
   border-color: #80c0ff;
 }
+
+/* Source filter button hover and active colors */
+.filter-button[data-source="CNBC"].active,
+.filter-button[data-source="CNBC"]:hover {
+  background-color: #005594;
+  color: #fff;
+  border-color: #005594;
+}
+
+.filter-button[data-source="Bloomberg"].active,
+.filter-button[data-source="Bloomberg"]:hover {
+  background-color: #6f2da8;
+  color: #fff;
+  border-color: #6f2da8;
+}
+
+.filter-button[data-source="TechCrunch Fintech"].active,
+.filter-button[data-source="TechCrunch Fintech"]:hover {
+  background-color: #22996e;
+  color: #fff;
+  border-color: #22996e;
+}
+
+.filter-button[data-source="MarketWatch"].active,
+.filter-button[data-source="MarketWatch"]:hover {
+  background-color: #016936;
+  color: #fff;
+  border-color: #016936;
+}
+
+.filter-button[data-source="Seeking Alpha"].active,
+.filter-button[data-source="Seeking Alpha"]:hover {
+  background-color: #72368f;
+  color: #fff;
+  border-color: #72368f;
+}
+
+.filter-button[data-source="WSJ"].active,
+.filter-button[data-source="WSJ"]:hover,
+.filter-button[data-source="Wall Street Journal"].active,
+.filter-button[data-source="Wall Street Journal"]:hover {
+  background-color: #444;
+  color: #fff;
+  border-color: #444;
+}
