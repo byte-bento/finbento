@@ -86,12 +86,25 @@ a:hover {
   background-color: #005594;
 }
 
-.source-techcrunch {
-  background-color: #0f9d58;
+.source-marketwatch {
+  background-color: #016936;
+}
+
+.source-seekingalpha {
+  background-color: #72368f;
+}
+
+.source-techcrunchfintech {
+  background-color: #22996e;
 }
 
 .source-bloomberg {
   background-color: #6f2da8;
+}
+
+.source-wsj,
+.source-wallstreetjournal {
+  background-color: #444;
 }
 
 .summary {

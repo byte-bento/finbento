@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       <article class="card" data-source="${article.source}">
         <h2><a href="${article.link}" target="_blank" rel="noopener">${article.title}</a></h2>
         <p class="source">
-          <span class="source-badge source-${article.source.toLowerCase().replace(/\s+/g, '')}">
+          <span class="source-badge source-${article.source.toLowerCase().replace(/[^a-z0-9]/g, '')}">
             ${article.source}
           </span>
           ${article.pubDate ? ` — ${new Date(article.pubDate).toLocaleDateString('en-US', {
