@@ -111,8 +111,20 @@ a:hover {
   background-color: #005b96;
 }
 
-.source-reutersbusiness {
-  background-color: #ff9900;
+.source-investing {
+  background-color: #2e86ab; /* Blue-gray */
+}
+
+.source-kiplinger {
+  background-color: #b80000; /* Deep red */
+}
+
+.source-financialtimes {
+  background-color: #9e2a2b; /* FT-style maroon */
+}
+
+.source-fortune {
+  background-color: #333333; /* Fortune’s classic black */
 }
 
 .summary {
@@ -303,13 +315,6 @@ body.dark-mode .filter-button.active {
   border-color: #005b96;
 }
 
-.filter-button[data-source="Reuters Business"].active,
-.filter-button[data-source="Reuters Business"]:hover {
-  background-color: #ff9900;
-  color: #fff;
-  border-color: #ff9900;
-}
-
 .filter-button[data-source="WSJ"].active,
 .filter-button[data-source="WSJ"]:hover,
 .filter-button[data-source="Wall Street Journal"].active,
@@ -319,3 +324,30 @@ body.dark-mode .filter-button.active {
   border-color: #c00;
 }
  
+.filter-button[data-source="Investing"].active,
+.filter-button[data-source="Investing"]:hover {
+  background-color: #2e86ab;
+  color: #fff;
+  border-color: #2e86ab;
+}
+
+.filter-button[data-source="Kiplinger"].active,
+.filter-button[data-source="Kiplinger"]:hover {
+  background-color: #b80000;
+  color: #fff;
+  border-color: #b80000;
+}
+
+.filter-button[data-source="Financial Times"].active,
+.filter-button[data-source="Financial Times"]:hover {
+  background-color: #9e2a2b;
+  color: #fff;
+  border-color: #9e2a2b;
+}
+
+.filter-button[data-source="Fortune"].active,
+.filter-button[data-source="Fortune"]:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
