@@ -104,7 +104,15 @@ a:hover {
 
 .source-wsj,
 .source-wallstreetjournal {
-  background-color: #444;
+  background-color: #c00;
+}
+
+.source-investopedia {
+  background-color: #005b96;
+}
+
+.source-themotleyfool {
+  background-color: #7c3aed; /* purple-ish Fool vibe */
 }
 
 .summary {
