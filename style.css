@@ -91,7 +91,7 @@ a:hover {
 }
 
 .source-seekingalpha {
-  background-color: #72368f;
+  background-color: #8e4585;
 }
 
 .source-techcrunchfintech {
@@ -99,7 +99,7 @@ a:hover {
 }
 
 .source-bloomberg {
-  background-color: #6f2da8;
+  background-color: #5c2e91;
 }
 
 .source-wsj,
@@ -282,9 +282,9 @@ body.dark-mode .filter-button.active {
 
 .filter-button[data-source="Bloomberg"].active,
 .filter-button[data-source="Bloomberg"]:hover {
-  background-color: #6f2da8;
+  background-color: #5c2e91;
   color: #fff;
-  border-color: #6f2da8;
+  border-color: #5c2e91;
 }
 
 .filter-button[data-source="TechCrunch Fintech"].active,
@@ -303,9 +303,9 @@ body.dark-mode .filter-button.active {
 
 .filter-button[data-source="Seeking Alpha"].active,
 .filter-button[data-source="Seeking Alpha"]:hover {
-  background-color: #72368f;
+  background-color: #8e4585;
   color: #fff;
-  border-color: #72368f;
+  border-color: #8e4585;
 }
 
 .filter-button[data-source="Investopedia"].active,
