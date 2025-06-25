@@ -115,6 +115,10 @@ a:hover {
   background-color: #7c3aed; /* purple-ish Fool vibe */
 }
 
+.source-reutersbusiness {
+  background-color: #ff9900;
+}
+
 .summary {
   font-size: 1rem;
   color: #444;
@@ -301,6 +305,13 @@ body.dark-mode .filter-button.active {
   background-color: #005b96;
   color: #fff;
   border-color: #005b96;
+}
+
+.filter-button[data-source="Reuters Business"].active,
+.filter-button[data-source="Reuters Business"]:hover {
+  background-color: #ff9900;
+  color: #fff;
+  border-color: #ff9900;
 }
 
 .filter-button[data-source="WSJ"].active,
