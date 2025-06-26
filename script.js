@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           <span class="source-badge source-${article.source.toLowerCase().replace(/[^a-z0-9]/g, '')}">
             ${article.source}
           </span>
-          ${article.pubDate ? ` — <span class="pub-date">${formatDate(article.pubDate)}</span>` : ''}
+          ${article.pubDate ? ` <strong class="dot">•</strong> <span class="pub-date">${formatDate(article.pubDate)}</span>` : ''}
         </p>
         <p class="summary">${article.description || ''}</p>
       </article>
