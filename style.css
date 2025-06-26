@@ -186,6 +186,14 @@ a:hover {
   }
 }
 
+.pub-date {
+  font-size: 0.8rem;
+  color: #666;
+}
+body.dark-mode .pub-date {
+  color: #aaa;
+}
+
 /* Focus Mode — hides header only */
 body.focus-mode .site-header {
   display: none;

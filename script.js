@@ -17,11 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           <span class="source-badge source-${article.source.toLowerCase().replace(/[^a-z0-9]/g, '')}">
             ${article.source}
           </span>
-          ${article.pubDate ? ` — ${new Date(article.pubDate).toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-          })}` : ''}
+          ${article.pubDate ? ` — <span class="pub-date">${formatDate(article.pubDate)}</span>` : ''}
         </p>
         <p class="summary">${article.description || ''}</p>
       </article>
@@ -49,6 +45,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 });
+
+function formatDate(pubDate) {
+  const date = new Date(pubDate);
+  const options = { month: 'short', day: 'numeric' };
+
+  if (pubDate.includes(":")) {
+    options.hour = 'numeric';
+    options.minute = '2-digit';
+  }
+
+  return date.toLocaleString('en-US', options);
+}
 
 function setupFiltering() {
   const buttons = document.querySelectorAll('.filter-button');
