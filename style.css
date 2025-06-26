@@ -162,7 +162,9 @@ body.dark-mode .pub-date {
 
 /* Focus Mode */
 body.focus-mode .filter-bar,
-body.focus-mode #news-container {
+body.focus-mode .toggle-bar,
+body.focus-mode .refresh-button,
+body.focus-mode .last-updated {
   display: none;
 }
 
