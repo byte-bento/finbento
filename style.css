@@ -383,3 +383,8 @@ body.dark-mode .filter-button.active {
 body.dark-mode .last-updated {
   color: #aaa;
 }
+
+/* Ensure news is visible in Focus Mode */
+body.focus-mode #news-container {
+  display: grid;
+}
