@@ -3,7 +3,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
     const res = await fetch("https://purple-wind-2637.tough-bed6922.workers.dev");
-    const articles = await res.json();
+    let articles = await res.json();
+
+    articles.sort((a, b) => {
+      const dateA = new Date(a.pubDate);
+      const dateB = new Date(b.pubDate);
+      return dateB - dateA;
+    });
 
     if (!articles.length) {
       container.innerHTML = `<p>No articles available right now.</p>`;
