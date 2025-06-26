@@ -451,8 +451,4 @@ body.focus-mode.dark-mode .card h2 {
   color: #000;
 }
 
-/* When focus mode is active */
-body.focus-mode .focus-button {
-  background-color: #80c0ff;
-  color: #000;
-}
+
