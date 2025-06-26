@@ -30,6 +30,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     `).join('');
 
     setupFiltering();
+  
+  const lastUpdated = document.getElementById('last-updated');
+  if (lastUpdated) {
+    const now = new Date();
+    lastUpdated.textContent = `🕒 Last updated: ${now.toLocaleString()}`;
+  }
+
+  const refreshButton = document.getElementById('refresh-button');
+  if (refreshButton) {
+    refreshButton.addEventListener('click', () => {
+      location.reload();
+    });
+  }
 
   } catch (err) {
     container.innerHTML = `<p>Failed to load news: ${err.message}</p>`;

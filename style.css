@@ -354,3 +354,31 @@ body.dark-mode .filter-button.active {
   color: #fff;
   border-color: #6001d2;
 }
+
+.last-updated {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.refresh-button {
+  display: block;
+  margin: 1rem auto 2rem;
+  background-color: #114488;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.refresh-button:hover {
+  background-color: #0d376e;
+}
+
+body.dark-mode .last-updated {
+  color: #aaa;
+}
