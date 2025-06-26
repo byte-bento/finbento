@@ -438,11 +438,17 @@ body.focus-mode.dark-mode .card h2 {
   font-size: 0.9rem;
   border-radius: 6px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .focus-button:hover {
   background-color: #0d376e;
+}
+
+/* When Focus Mode is toggled ON */
+.focus-button.active {
+  background-color: #80c0ff;
+  color: #000;
 }
 
 /* When focus mode is active */

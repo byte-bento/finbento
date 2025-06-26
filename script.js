@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (focusToggle) {
     focusToggle.addEventListener('click', () => {
       document.body.classList.toggle('focus-mode');
+      focusToggle.classList.toggle('active');
     });
   }
 
