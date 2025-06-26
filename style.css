@@ -428,3 +428,25 @@ body.focus-mode.dark-mode .source {
 body.focus-mode.dark-mode .card h2 {
   color: #80c0ff;
 }
+
+/* Focus Mode button styling */
+.focus-button {
+  background-color: #114488;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.focus-button:hover {
+  background-color: #0d376e;
+}
+
+/* When focus mode is active */
+body.focus-mode .focus-button {
+  background-color: #80c0ff;
+  color: #000;
+}
