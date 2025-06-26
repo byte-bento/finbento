@@ -54,11 +54,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 function formatDate(pubDate) {
   const date = new Date(pubDate);
-  const dateStr = date.toLocaleDateString('en-US', {
+  const options = {
     month: 'short',
     day: 'numeric',
-    year: 'numeric',
-  });
+    year: 'numeric'
+  };
   return date.toLocaleDateString('en-US', options);
 }
 
