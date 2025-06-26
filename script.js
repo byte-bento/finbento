@@ -56,13 +56,10 @@ function formatDate(pubDate) {
   const date = new Date(pubDate);
   const dateStr = date.toLocaleDateString('en-US', {
     month: 'short',
-    day: 'numeric'
+    day: 'numeric',
+    year: 'numeric',
   });
-  const timeStr = date.toLocaleTimeString('en-US', {
-    hour: 'numeric',
-    minute: '2-digit'
-  });
-  return `${dateStr} <strong>•</strong> ${timeStr}`;
+  return date.toLocaleDateString('en-US', options);
 }
 
 function setupFiltering() {
