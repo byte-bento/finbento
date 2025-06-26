@@ -148,6 +148,10 @@ a:hover {
 .filter-bar {
   text-align: center;
   margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem; /* spacing between buttons */
 }
 
 .filter-button {
