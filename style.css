@@ -94,8 +94,12 @@ a:hover {
   background-color: #8e4585;
 }
 
-.source-techcrunchfintech {
-  background-color: #22996e;
+.source-finextra {
+  background-color: #007e7a;
+}
+
+.source-thefinancialbrand {
+  background-color: #c76b00;
 }
 
 .source-bloomberg {
@@ -295,13 +299,6 @@ body.dark-mode .filter-button.active {
   border-color: #5c2e91;
 }
 
-.filter-button[data-source="TechCrunch Fintech"].active,
-.filter-button[data-source="TechCrunch Fintech"]:hover {
-  background-color: #22996e;
-  color: #fff;
-  border-color: #22996e;
-}
-
 .filter-button[data-source="MarketWatch"].active,
 .filter-button[data-source="MarketWatch"]:hover {
   background-color: #016936;
@@ -358,4 +355,18 @@ body.dark-mode .filter-button.active {
   background-color: #333;
   color: #fff;
   border-color: #333;
+}
+
+.filter-button[data-source="Finextra"].active,
+.filter-button[data-source="Finextra"]:hover {
+  background-color: #007e7a;
+  color: #fff;
+  border-color: #007e7a;
+}
+
+.filter-button[data-source="The Financial Brand"].active,
+.filter-button[data-source="The Financial Brand"]:hover {
+  background-color: #c76b00;
+  color: #fff;
+  border-color: #c76b00;
 }
