@@ -48,14 +48,15 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 function formatDate(pubDate) {
   const date = new Date(pubDate);
-  const options = { month: 'short', day: 'numeric' };
-
-  if (pubDate.includes(":")) {
-    options.hour = 'numeric';
-    options.minute = '2-digit';
-  }
-
-  return date.toLocaleString('en-US', options);
+  const dateStr = date.toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric'
+  });
+  const timeStr = date.toLocaleTimeString('en-US', {
+    hour: 'numeric',
+    minute: '2-digit'
+  });
+  return `${dateStr} <strong>•</strong> ${timeStr}`;
 }
 
 function setupFiltering() {
