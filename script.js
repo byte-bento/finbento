@@ -18,25 +18,24 @@ document.addEventListener("DOMContentLoaded", async () => {
       return;
     }
 
-container.innerHTML = articles.map(article => {
-  const savedId = encodeURIComponent(article.link);
-  return `
-    <article class="card" data-source="${article.source}" data-id="${savedId}">
-      <h2><a href="${article.link}" target="_blank" rel="noopener">${article.title}</a></h2>
-      <p class="source">
-        <span class="source-badge source-${article.source.toLowerCase().replace(/[^a-z0-9]/g, '')}">
-          ${article.source}
-        </span>
-        ${article.pubDate ? ` <strong class="dot">•</strong> <span class="pub-date">${formatDate(article.pubDate)}</span>` : ''}
-      </p>
-      <p class="summary">${article.description || ''}</p>
-
-      <div class="card-footer">
-        <button class="save-button" data-id="${savedId}">📌 Save</button>
-      </div>
-    </article>
-  `;
-}).join('');
+    container.innerHTML = articles.map(article => {
+      const savedId = encodeURIComponent(article.link);
+      return `
+        <article class="card" data-source="${article.source}" data-id="${savedId}">
+          <h2><a href="${article.link}" target="_blank" rel="noopener">${article.title}</a></h2>
+          <p class="source">
+            <span class="source-badge source-${article.source.toLowerCase().replace(/[^a-z0-9]/g, '')}">
+              ${article.source}
+            </span>
+            ${article.pubDate ? ` <strong class="dot">•</strong> <span class="pub-date">${formatDate(article.pubDate)}</span>` : ''}
+          </p>
+          <p class="summary">${article.description || ''}</p>
+          <div class="card-footer">
+            <button class="save-button" data-id="${savedId}">📌 Save</button>
+          </div>
+        </article>
+      `;
+    }).join('');
 
     setupFiltering();
     setupSaveButtons();
@@ -134,7 +133,9 @@ container.innerHTML = articles.map(article => {
         <h2><a href="${article.link}" target="_blank" rel="noopener">${article.title}</a></h2>
         <p class="source"><strong>${article.source}</strong> • <span class="pub-date">${article.date}</span></p>
         <p class="summary">${article.summary}</p>
-        <button class="remove-button" data-id="${id}">🗑 Remove</button>
+        <div class="remove-container">
+          <button class="remove-button" data-id="${id}">🗑️ Remove</button>
+        </div>
       </div>
     `).join('');
 
