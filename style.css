@@ -562,6 +562,8 @@ body.dark-mode .saved-drawer {
 .drawer-actions {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   margin-top: 1rem;
 }
 
@@ -623,4 +625,25 @@ body.dark-mode .drawer-actions button {
 
 body.dark-mode .drawer-actions button:hover {
   background-color: #80c0ff;
+}
+
+.remove-button {
+  display: inline-block; /* prevents full-width stretch */
+}
+
+.clear-button,
+.export-button {
+  background-color: #114488;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clear-button:hover,
+.export-button:hover {
+  background-color: #0d376e;
 }
