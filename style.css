@@ -434,3 +434,16 @@ body.focus-mode.dark-mode .card h2 {
   color: #80c0ff;
 }
 
+body.dark-mode .source-badge.source-cnbc { background-color: #005594 !important; }
+body.dark-mode .source-badge.source-marketwatch { background-color: #016936 !important; }
+body.dark-mode .source-badge.source-seekingalpha { background-color: #8e4585 !important; }
+body.dark-mode .source-badge.source-bloomberg { background-color: #5c2e91 !important; }
+body.dark-mode .source-badge.source-wsj,
+body.dark-mode .source-badge.source-wallstreetjournal { background-color: #9c1c1c !important; }
+body.dark-mode .source-badge.source-investopedia { background-color: #247ba0 !important; }
+body.dark-mode .source-badge.source-investing { background-color: #4098d7 !important; }
+body.dark-mode .source-badge.source-kiplinger { background-color: #d9381e !important; }
+body.dark-mode .source-badge.source-financialtimes { background-color: #7b1e3b !important; }
+body.dark-mode .source-badge.source-motleyfool { background-color: #7b5cd6 !important; }
+body.dark-mode .source-badge.source-yahoofinance { background-color: #6001d2 !important; }
+body.dark-mode .source-badge.source-fortune { background-color: #333 !important; }
