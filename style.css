@@ -57,8 +57,7 @@ a:hover {
 
 .card-footer {
   margin-top: auto;
-  display: flex;
-  justify-content: flex-start;
+  padding-top: 1rem;
 }
 
 .card:hover {
@@ -145,9 +144,8 @@ a:hover {
 
 #news-container {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  align-items: stretch; /* 👈 important to let .card fill height */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
 }
 
 @media (min-width: 600px) {
