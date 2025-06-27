@@ -236,9 +236,9 @@ body.focus-mode .summary {
   background-color: #114488;
   color: white;
   border: none;
-  padding: 0.6rem 1.2rem;
+  padding: 0.5rem 1rem;
   font-size: 0.9rem;
-  border-radius: 8px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
