@@ -159,11 +159,11 @@ a:hover {
   background-color: #f0f0f0;
   color: #333;
   border: 2px solid #ccc;
-  padding: 0.5rem 1.25rem;
+  padding: 0.5rem 1rem;
   font-size: 0.9rem;
   border-radius: 20px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .focus-button:hover {
