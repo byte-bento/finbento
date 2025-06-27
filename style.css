@@ -1,7 +1,7 @@
 /* Site header */
 .site-header {
   text-align: center;
-  padding: 2rem 1rem 1rem; /* tighten bottom padding */
+  padding: 2rem 1rem 1rem;
   background: #f0f2f5;
   border-bottom: 1px solid #ddd;
   margin-bottom: 1.5rem;
@@ -10,11 +10,11 @@
 .site-header h1 {
   font-size: 2rem;
   margin: 0 0 0.5rem;
-  color: #114488; /* financial deep blue */
+  color: #114488;
 }
 
 .site-header p {
-  margin: 0.3rem 0 1rem; /* tighter gap above toggle row */
+  margin: 0.3rem 0 1rem;
 }
 
 /* Global styles */
@@ -36,7 +36,7 @@ a {
 }
 
 a:hover {
-  color: #006d77; /* soft teal accent */
+  color: #006d77;
   text-decoration: underline;
 }
 
@@ -73,7 +73,7 @@ a:hover {
   font-size: 0.75rem;
   font-weight: 600;
   padding: 0.25rem 0.5rem;
-  border-radius: 6px;
+  border-radius: 20px;
   color: white;
   margin-bottom: 0.5rem;
 }
@@ -97,13 +97,30 @@ a:hover {
   color: #444;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3; /* optional for future compatibility */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-clamp: 3;
-  box-orient: vertical;
 }
 
+/* Layout grid */
+#news-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 600px) {
+  #news-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  #news-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Filter bar */
 .filter-bar {
   text-align: center;
   margin-bottom: 2rem;
@@ -112,7 +129,6 @@ a:hover {
   justify-content: center;
   gap: 0.5rem;
 }
-
 .filter-button {
   background-color: #eee;
   border: 1px solid #ccc;
@@ -131,33 +147,6 @@ a:hover {
   background-color: #114488;
   color: #fff;
   border-color: #114488;
-}
-
-#news-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-@media (min-width: 600px) {
-  #news-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 900px) {
-  #news-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.pub-date {
-  font-size: 0.8rem;
-  color: #666;
-}
-
-body.dark-mode .pub-date {
-  color: #aaa;
 }
 
 /* Focus Mode */
@@ -182,230 +171,19 @@ body.dark-mode .pub-date {
 }
 
 body.focus-mode .focus-button {
-  background-color: #80c0ff;
+  background-color: #5dc2af;
   color: #000;
-  border-color: #80c0ff;
+  border-color: #5dc2af;
 }
 
-/* Toggle bar */
-.toggle-bar {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.toggle-bar button {
-  background-color: #eee;
-  border: 1px solid #ccc;
-  padding: 0.5rem 1rem;
-  margin: 0 0.25rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.toggle-bar button:hover {
-  background-color: #ddd;
-}
-
-/* DARK MODE */
-body.dark-mode {
-  background-color: #1e1e1e;
-  color: #ddd;
-}
-
-body.dark-mode .site-header {
-  background-color: #121212;
-  border-color: #333;
-  color: #ddd;
-}
-
-body.dark-mode .site-header h1 {
-  color: #4da6ff;
-}
-
-body.dark-mode .card {
-  background-color: #1e1e1e;
-  border-color: #333;
-}
-
-body.dark-mode .card:hover {
-  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.05);
-}
-
-body.dark-mode .summary {
-  color: #ccc;
-}
-
-body.dark-mode a {
-  color: #80c0ff;
-}
-
-body.dark-mode a:hover {
-  color: #66ccaa;
-}
-
-body.dark-mode .source {
-  color: #aaa;
-}
-
-body.dark-mode .source-badge {
-  opacity: 0.9;
-}
-
-body.dark-mode .filter-button {
-  background-color: #444;
-  border-color: #666;
-  color: #eee;
-}
-
-body.dark-mode .filter-button:hover {
-  background-color: #555;
-}
-
-body.dark-mode .filter-button.active {
-  background-color: #4da6ff;
-  color: #000;
-  border-color: #4da6ff;
-}
-
-.filter-button[data-source="CNBC"].active,
-.filter-button[data-source="CNBC"]:hover {
-  background-color: #005594;
-  color: #fff;
-  border-color: #005594;
-}
-
-.filter-button[data-source="Bloomberg"].active,
-.filter-button[data-source="Bloomberg"]:hover {
-  background-color: #5c2e91;
-  color: #fff;
-  border-color: #5c2e91;
-}
-
-.filter-button[data-source="MarketWatch"].active,
-.filter-button[data-source="MarketWatch"]:hover {
-  background-color: #016936;
-  color: #fff;
-  border-color: #016936;
-}
-
-.filter-button[data-source="Seeking Alpha"].active,
-.filter-button[data-source="Seeking Alpha"]:hover {
-  background-color: #8e4585;
-  color: #fff;
-  border-color: #8e4585;
-}
-
-.filter-button[data-source="Investopedia"].active,
-.filter-button[data-source="Investopedia"]:hover {
-  background-color: #247ba0;
-  color: #fff;
-  border-color: #247ba0;
-}
-
-filter-button[data-source="WSJ"].active,
-.filter-button[data-source="WSJ"]:hover,
-.filter-button[data-source="Wall Street Journal"].active,
-.filter-button[data-source="Wall Street Journal"]:hover {
-  background-color: #9c1c1c;
-  color: #fff;
-  border-color: #9c1c1c;
-}
-
-.filter-button[data-source="Investing"].active,
-.filter-button[data-source="Investing"]:hover {
-  background-color: #4098d7;
-  color: #fff;
-  border-color: #4098d7;
-}
-
-.filter-button[data-source="Kiplinger"].active,
-.filter-button[data-source="Kiplinger"]:hover {
-  background-color: #d9381e;
-  color: #fff;
-  border-color: #d9381e;
-}
-
-.filter-button[data-source="Financial Times"].active,
-.filter-button[data-source="Financial Times"]:hover {
-  background-color: #7b1e3b;
-  color: #fff;
-  border-color: #7b1e3b;
-}
-
-.filter-button[data-source="Fortune"].active,
-.filter-button[data-source="Fortune"]:hover {
-  background-color: #333;
-  color: #fff;
-  border-color: #333;
-}
-
-.filter-button[data-source="Motley Fool"].active,
-.filter-button[data-source="Motley Fool"]:hover {
-  background-color: #7b5cd6;
-  color: #fff;
-  border-color: #7b5cd6;
-}
-
-.filter-button[data-source="Yahoo Finance"].active,
-.filter-button[data-source="Yahoo Finance"]:hover {
-  background-color: #6001d2;
-  color: #fff;
-  border-color: #6001d2;
-}
-
-.last-updated {
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-  color: #555;
-}
-
-.refresh-button {
-  display: block;
-  margin: 1rem auto 2rem;
-  margin-bottom: 1.5rem;
-  background-color: #114488;
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  font-size: 0.9rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.refresh-button:hover {
-  background-color: #0d376e;
-}
-
-body.dark-mode .last-updated {
-  color: #aaa;
-}
-
-/* Ensure news is visible in Focus Mode */
-body.focus-mode #news-container {
-  display: grid;
-}
-
-/* Optional: Subtle tweaks to article cards in focus mode */
-body.focus-mode .card {
-  background-color: #fffceb;
-  box-shadow: none;
-  border-color: #eee;
-}
-
-body.dark-mode.focus-mode .card {
-  background-color: #2a2a1e;
-  border-color: #444;
-}
-
-/* Minimal article style for Focus Mode */
 body.focus-mode .card {
   background: none;
   border: none;
   box-shadow: none;
-  padding: 0 0 1rem;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 1rem;
+  padding-left: 0;
   margin-bottom: 1.2rem;
 }
 
@@ -427,10 +205,104 @@ body.focus-mode .summary {
   display: none;
 }
 
-body.focus-mode.dark-mode .source {
-  color: #aaa;
+/* Toggle bar */
+.toggle-bar {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.toggle-bar button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.toggle-bar button:hover {
+  background-color: #ddd;
 }
 
+/* Refresh */
+.last-updated {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+.refresh-button {
+  display: block;
+  margin: 1rem auto 2rem;
+  background-color: #114488;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.refresh-button:hover {
+  background-color: #0d376e;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #ddd;
+}
+body.dark-mode .site-header {
+  background-color: #121212;
+  border-color: #333;
+}
+body.dark-mode .site-header h1 {
+  color: #4da6ff;
+}
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+body.dark-mode .card:hover {
+  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.05);
+}
+body.dark-mode .summary {
+  color: #ccc;
+}
+body.dark-mode a {
+  color: #80c0ff;
+}
+body.dark-mode a:hover {
+  color: #66ccaa;
+}
+body.dark-mode .source {
+  color: #aaa;
+}
+body.dark-mode .source-badge {
+  opacity: 0.9;
+}
+body.dark-mode .filter-button {
+  background-color: #444;
+  border-color: #666;
+  color: #eee;
+}
+body.dark-mode .filter-button:hover {
+  background-color: #555;
+}
+body.dark-mode .filter-button.active {
+  background-color: #4da6ff;
+  color: #000;
+  border-color: #4da6ff;
+}
+body.dark-mode .last-updated {
+  color: #aaa;
+}
+body.focus-mode.dark-mode .card {
+  background-color: #2a2a1e;
+  border-color: #444;
+}
 body.focus-mode.dark-mode .card h2 {
   color: #80c0ff;
+}
+body.focus-mode.dark-mode .source {
+  color: #aaa;
 }
