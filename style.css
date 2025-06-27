@@ -53,6 +53,7 @@ a:hover {
   background: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   transition: box-shadow 0.2s ease;
+  margin: 0; /* Remove extra spacing between cards */
 }
 
 .card-footer {
