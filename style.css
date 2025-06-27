@@ -147,7 +147,7 @@ a:hover {
 #news-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem 1.5rem; /* Adds both horizontal & vertical spacing */
+  gap: 2rem 2rem; /* Adds both horizontal & vertical spacing */
   padding: 1rem 0;
   align-items: stretch; /* Ensures consistent card height */
 }
