@@ -434,16 +434,89 @@ body.focus-mode.dark-mode .card h2 {
   color: #80c0ff;
 }
 
-body.dark-mode .source-badge.source-cnbc { background-color: #005594 !important; }
-body.dark-mode .source-badge.source-marketwatch { background-color: #016936 !important; }
-body.dark-mode .source-badge.source-seekingalpha { background-color: #8e4585 !important; }
-body.dark-mode .source-badge.source-bloomberg { background-color: #5c2e91 !important; }
-body.dark-mode .source-badge.source-wsj,
-body.dark-mode .source-badge.source-wallstreetjournal { background-color: #9c1c1c !important; }
-body.dark-mode .source-badge.source-investopedia { background-color: #247ba0 !important; }
-body.dark-mode .source-badge.source-investing { background-color: #4098d7 !important; }
-body.dark-mode .source-badge.source-kiplinger { background-color: #d9381e !important; }
-body.dark-mode .source-badge.source-financialtimes { background-color: #7b1e3b !important; }
-body.dark-mode .source-badge.source-motleyfool { background-color: #7b5cd6 !important; }
-body.dark-mode .source-badge.source-yahoofinance { background-color: #6001d2 !important; }
-body.dark-mode .source-badge.source-fortune { background-color: #333 !important; }
+body.dark-mode .filter-button[data-source="CNBC"].active,
+body.dark-mode .filter-button[data-source="CNBC"]:hover {
+  background-color: #005594;
+  color: #fff;
+  border-color: #005594;
+}
+
+body.dark-mode .filter-button[data-source="Bloomberg"].active,
+body.dark-mode .filter-button[data-source="Bloomberg"]:hover {
+  background-color: #5c2e91;
+  color: #fff;
+  border-color: #5c2e91;
+}
+
+body.dark-mode .filter-button[data-source="MarketWatch"].active,
+body.dark-mode .filter-button[data-source="MarketWatch"]:hover {
+  background-color: #016936;
+  color: #fff;
+  border-color: #016936;
+}
+
+body.dark-mode .filter-button[data-source="Seeking Alpha"].active,
+body.dark-mode .filter-button[data-source="Seeking Alpha"]:hover {
+  background-color: #8e4585;
+  color: #fff;
+  border-color: #8e4585;
+}
+
+body.dark-mode .filter-button[data-source="Investopedia"].active,
+body.dark-mode .filter-button[data-source="Investopedia"]:hover {
+  background-color: #247ba0;
+  color: #fff;
+  border-color: #247ba0;
+}
+
+body.dark-mode .filter-button[data-source="WSJ"].active,
+body.dark-mode .filter-button[data-source="WSJ"]:hover,
+body.dark-mode .filter-button[data-source="Wall Street Journal"].active,
+body.dark-mode .filter-button[data-source="Wall Street Journal"]:hover {
+  background-color: #9c1c1c;
+  color: #fff;
+  border-color: #9c1c1c;
+}
+
+body.dark-mode .filter-button[data-source="Investing"].active,
+body.dark-mode .filter-button[data-source="Investing"]:hover {
+  background-color: #4098d7;
+  color: #fff;
+  border-color: #4098d7;
+}
+
+body.dark-mode .filter-button[data-source="Kiplinger"].active,
+body.dark-mode .filter-button[data-source="Kiplinger"]:hover {
+  background-color: #d9381e;
+  color: #fff;
+  border-color: #d9381e;
+}
+
+body.dark-mode .filter-button[data-source="Financial Times"].active,
+body.dark-mode .filter-button[data-source="Financial Times"]:hover {
+  background-color: #7b1e3b;
+  color: #fff;
+  border-color: #7b1e3b;
+}
+
+body.dark-mode .filter-button[data-source="Fortune"].active,
+body.dark-mode .filter-button[data-source="Fortune"]:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+body.dark-mode .filter-button[data-source="Motley Fool"].active,
+body.dark-mode .filter-button[data-source="Motley Fool"]:hover {
+  background-color: #7b5cd6;
+  color: #fff;
+  border-color: #7b5cd6;
+}
+
+body.dark-mode .filter-button[data-source="Yahoo Finance"].active,
+body.dark-mode .filter-button[data-source="Yahoo Finance"]:hover {
+  background-color: #6001d2;
+  color: #fff;
+  border-color: #6001d2;
+}
+
