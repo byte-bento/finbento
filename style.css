@@ -554,3 +554,29 @@ body.dark-mode .saved-drawer {
 .hidden {
   display: none;
 }
+
+.save-button {
+  background-color: #f8f8f8;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.save-button:hover {
+  background-color: #e6e6e6;
+}
+
+body.dark-mode .save-button {
+  background-color: #333;
+  color: #eee;
+  border-color: #555;
+}
+
+body.dark-mode .save-button:hover {
+  background-color: #444;
+}
