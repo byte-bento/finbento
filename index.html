@@ -8,17 +8,30 @@
 </head>
 <body>
 <header class="site-header">
-  <h1>Finbento</h1>
+  <h1>FinBento</h1>
   <p>Your daily bite of finance, investing, and money news.</p>
 
   <div class="toggle-bar">
     <button id="focus-toggle" class="focus-button">🧘 Focus Mode</button>
-    <button id="dark-mode-toggle">🌓 Dark Mode</button>
+    <button id="dark-mode-toggle" class="filter-button">🌓 Dark Mode</button>
+    <button id="toggle-saved" class="filter-button">📁 Saved</button>
   </div>
 
   <p id="last-updated" class="last-updated">🕒 Last updated: ...</p>
   <button id="refresh-button" class="refresh-button">🔄 Refresh Articles</button>
 </header>
+
+<div id="saved-drawer" class="saved-drawer hidden">
+  <div class="drawer-header">
+    <h2>Saved Articles</h2>
+    <button id="close-saved" class="close-button">✖</button>
+  </div>
+  <div id="saved-articles-list"></div>
+  <div class="drawer-actions">
+    <button id="clear-saved" class="clear-button">Clear All</button>
+    <button id="export-saved" class="export-button">Export</button>
+  </div>
+</div>
 
 <div class="filter-bar">
   <button class="filter-button active" data-source="all">All</button>
