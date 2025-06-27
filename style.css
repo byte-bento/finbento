@@ -42,6 +42,10 @@ a:hover {
 
 /* Article card styling */
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   background: #ffffff;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -49,21 +53,16 @@ a:hover {
   margin-bottom: 1.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   transition: box-shadow 0.2s ease;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%; /* ensures all cards are same height */
-}
-
-.card:hover {
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-footer {
   margin-top: auto;
   display: flex;
   justify-content: flex-start;
+}
+
+.card:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card h2 {
