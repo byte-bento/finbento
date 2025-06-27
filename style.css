@@ -178,7 +178,7 @@ body.dark-mode .pub-date {
 }
 
 .focus-button:hover {
-  background-color: #e6e6e6;
+  background-color: #66bfbf;
 }
 
 body.focus-mode .focus-button {
@@ -195,9 +195,9 @@ body.focus-mode .focus-button {
 
 .toggle-bar button {
   background-color: #eee;
-  border: 1px solid #ccc;
+  color: #333;
+  border: 2px solid #ccc;
   padding: 0.5rem 1rem;
-  margin: 0 0.25rem;
   border-radius: 20px;
   font-size: 0.9rem;
   cursor: pointer;
