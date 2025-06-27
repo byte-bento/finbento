@@ -148,17 +148,20 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  align-items: stretch; /* 👈 important to let .card fill height */
 }
 
 @media (min-width: 600px) {
   #news-container {
     grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
   }
 }
 
 @media (min-width: 900px) {
   #news-container {
     grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
   }
 }
 
