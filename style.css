@@ -72,8 +72,8 @@ a:hover {
   display: inline-block;
   font-size: 0.75rem;
   font-weight: 600;
-  padding: 0.25rem 0.5rem;
-  border-radius: 6px;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
   color: white;
   margin-bottom: 0.5rem;
 }
