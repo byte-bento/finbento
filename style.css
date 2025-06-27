@@ -167,18 +167,30 @@ body.dark-mode .pub-date {
 }
 
 .focus-button {
-  background-color: #114488;
-  color: #fff;
-  border: none;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 2px solid #ccc;
   padding: 0.5rem 1.25rem;
   font-size: 0.9rem;
-  border-radius: 6px;
+  border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .focus-button:hover {
-  background-color: #0d376e;
+  background-color: #e6e6e6;
+}
+
+.focus-button.active {
+  background-color: #80c0ff;
+  color: #000;
+  border-color: #80c0ff;
+}
+
+body.focus-mode .focus-button {
+  background-color: #80c0ff;
+  color: #000;
+  border-color: #80c0ff;
 }
 
 /* Toggle bar */
@@ -298,7 +310,7 @@ body.dark-mode .filter-button.active {
   border-color: #247ba0;
 }
 
-.filter-button[data-source="WSJ"].active,
+filter-button[data-source="WSJ"].active,
 .filter-button[data-source="WSJ"]:hover,
 .filter-button[data-source="Wall Street Journal"].active,
 .filter-button[data-source="Wall Street Journal"]:hover {
@@ -428,27 +440,3 @@ body.focus-mode.dark-mode .source {
 body.focus-mode.dark-mode .card h2 {
   color: #80c0ff;
 }
-
-/* Focus Mode button styling */
-.focus-button {
-  background-color: #114488;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1.25rem;
-  font-size: 0.9rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.focus-button:hover {
-  background-color: #0d376e;
-}
-
-/* When Focus Mode is toggled ON */
-.focus-button.active {
-  background-color: #80c0ff;
-  color: #000;
-}
-
-
