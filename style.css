@@ -181,12 +181,6 @@ body.dark-mode .pub-date {
   background-color: #e6e6e6;
 }
 
-.focus-button.active {
-  background-color: #80c0ff;
-  color: #000;
-  border-color: #80c0ff;
-}
-
 body.focus-mode .focus-button {
   background-color: #80c0ff;
   color: #000;
