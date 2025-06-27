@@ -555,7 +555,25 @@ body.dark-mode .saved-drawer {
   display: none;
 }
 
-.save-button {
+.drawer-actions button {
+  background-color: #114488;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin: 0.3rem;
+}
+
+.drawer-actions button:hover {
+  background-color: #0d376e;
+}
+
+/* Save & Remove buttons */
+.save-button,
+.remove-button {
   background-color: #f8f8f8;
   color: #333;
   border: 1px solid #ccc;
@@ -567,16 +585,28 @@ body.dark-mode .saved-drawer {
   margin-top: 0.5rem;
 }
 
-.save-button:hover {
+.save-button:hover,
+.remove-button:hover {
   background-color: #e6e6e6;
 }
 
-body.dark-mode .save-button {
+body.dark-mode .save-button,
+body.dark-mode .remove-button {
   background-color: #333;
   color: #eee;
   border-color: #555;
 }
 
-body.dark-mode .save-button:hover {
+body.dark-mode .save-button:hover,
+body.dark-mode .remove-button:hover {
   background-color: #444;
+}
+
+body.dark-mode .drawer-actions button {
+  background-color: #4da6ff;
+  color: #000;
+}
+
+body.dark-mode .drawer-actions button:hover {
+  background-color: #80c0ff;
 }
