@@ -46,18 +46,20 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  min-height: 240px;
+  min-height: 200px;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 0.75rem 0.9rem;
   background: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   transition: box-shadow 0.2s ease;
+  margin: 0; /* Remove extra spacing between cards */
 }
 
 .card-footer {
   margin-top: auto;
   padding-top: 1rem;
+  min-height: 2rem;
 }
 
 .card:hover {
@@ -65,12 +67,9 @@ a:hover {
 }
 
 .card h2 {
-  margin-top: 0;
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
-}
-
-.card .summary {
-  margin-top: auto;
+  line-height: 1.4;
 }
 
 .source {
@@ -147,15 +146,23 @@ a:hover {
 
 #news-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.25rem; /* More balanced */
-  align-items: stretch;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem 1.5rem; /* Adds both horizontal & vertical spacing */
+  padding: 1rem 0;
+  align-items: stretch; /* Ensures consistent card height */
 }
 
-/* Optional: For slightly more balanced card size */
-@media (min-width: 1200px) {
+@media (min-width: 600px) {
+  #news-container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+  }
+}
+
+@media (min-width: 900px) {
   #news-container {
     grid-template-columns: repeat(4, 1fr);
+    align-items: stretch;
   }
 }
 
