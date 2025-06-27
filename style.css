@@ -178,7 +178,7 @@ body.dark-mode .pub-date {
 }
 
 .focus-button:hover {
-  background-color: #66bfbf;
+  background-color: #e6e6e6;
 }
 
 body.focus-mode .focus-button {
@@ -193,24 +193,19 @@ body.focus-mode .focus-button {
   margin-bottom: 1rem;
 }
 
-.toggle-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.2;
-  border: 2px solid #ccc;
-  background-color: #f4f4f4;
-  color: #222;
-  padding: 0.5rem 1.2rem;
-  border-radius: 2rem;
+.toggle-bar button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
-.toggle-button:hover {
-  background-color: #eaeaea;
+.toggle-bar button:hover {
+  background-color: #ddd;
 }
 
 /* DARK MODE */
