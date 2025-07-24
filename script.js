@@ -117,6 +117,8 @@ document.addEventListener("DOMContentLoaded", async () => {
           localStorage.setItem("savedArticles", JSON.stringify(saved));
           renderSavedArticles();
           showToast("📌 Article saved!");
+        } else {
+          showToast(("✅ Already saved."))
         }
       });
     });
