@@ -412,7 +412,7 @@ body.focus-mode .card {
   background: none;
   border: none;
   box-shadow: none;
-  padding: 0 0 1rem;
+  padding: 0.5rem 1rem 1rem;
   margin-bottom: 1.2rem;
 }
 
