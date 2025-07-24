@@ -1,4 +1,16 @@
-# FinBento 💹
+# FinBento 📊
+
+[![GitHub stars](https://img.shields.io/github/stars/byte-bento/finbento?style=social)](https://github.com/byte-bento/finbento/stargazers)
+[![open source](https://img.shields.io/badge/open%20source-Yes-brightgreen.svg)](https://opensource.org)
+![Project Type](https://img.shields.io/badge/type-project-blue)
+![Platform](https://img.shields.io/badge/platform-Cloudflare%20Workers-black)
+![Hosting](https://img.shields.io/badge/hosting-Cloudflare-orange)
+![Focus](https://img.shields.io/badge/focus-tech%20news-9cf)
+![Interface](https://img.shields.io/badge/interface-frontend--only-lightgrey)
+![Architecture](https://img.shields.io/badge/architecture-serverless-yellow)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen)
+![Built With](https://img.shields.io/badge/built%20with-curiosity%20%26%20caffeine-ff69b4)
 
 📰 Real-time finance news • 🧘 Focus Mode • 🌓 Dark Mode • 🔁 Auto-Refresh • 📁 Saved Articles • ✍️ Blog • ⚡ Fast, Static, Serverless
 
@@ -6,22 +18,35 @@
 
 > A bite-sized finance and investing news reader. FinBento keeps you in the loop — with clean headlines, curated sources, and no extra noise. Stay focused, stay informed.
 
----
+**🔗 Visit the live site:**<br>
+[https://finbento.com](https://finbento.com)
 
-## 📑 Table of Contents
-
-- [📸 Demo](#-demo)
-- [⭐ Features](#-features)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [🚀 Getting Started](#-getting-started)
-- [🤝 Contributing](#-contributing)
-- [📁 Repo Structure](#-repo-structure)
-- [📄 License](#-license)
-- [🙏 Acknowledgements](#-acknowledgements)
+**☕ If you find FinBento useful:**<br>
+<a href='https://ko-fi.com/O4O81GA31F' target='_blank'>Buy me a coffee at ko-fi.com</a> to help me keep the lights on!
 
 ---
 
-## 📸 Demo
+## 📋 Table of Contents
+
+- 🌐 [Demo](#demo)
+  - [Screenshot](#screenshot)
+  - [GIF](#gif)
+- ✨ [Features](#features)
+- 💻 [Tech Stack](#tech-stack)
+- 🏁 [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Development](#development)
+  - [Deployment](#deployment)
+- 🗺️ [Roadmap](#roadmap)
+- 🤝 [Contributing](#contributing)
+- 📁 [Repo Structure](#repo-structure)
+- 📄 [License](#license)
+- 🙏 [Acknowledgements](#acknowledgements)
+
+---
+
+## 🌐 Demo
 
 **FinBento**
 
@@ -32,7 +57,7 @@ Curated from trustworthy sources. Filtered for clarity.
 
 ---
 
-## ⭐ Features
+## ✨ Features
 
 - 📈 **Real-time finance headlines** from trusted sources (MarketWatch, Seeking Alpha, CNBC, WSJ, etc.)
 - 🔍 **Filter by source** — focus only on what you care about
@@ -46,16 +71,19 @@ Curated from trustworthy sources. Filtered for clarity.
 
 ---
 
-## 🛠️ Tech Stack
+## 💻 Tech Stack
 
-- ☁️ **Cloudflare Workers** — combines API logic and static site delivery
-- 💡 **Languages**: HTML, Vanilla JS, and CSS
-- 💻 **No frameworks or build steps**
-- 📂 **Single flat-file architecture** — simple, readable code
+🌀 **Hosted entirely via Cloudflare Workers** – combines serverless API logic and static content delivery in a single deployment.
+
+- **Platform & Hosting:** Cloudflare Workers (API + static assets)
+- **Language & Frameworks:** Vanilla JavaScript, HTML, CSS
+- **Storage:** Browser LocalStorage
+- **Version Control:** Git & GitHub
+- **No frameworks, no build step** — just clean, readable code!
 
 ---
 
-## 🚀 Getting Started
+## 🏁 Getting Started
 
 ### Prerequisites
 
@@ -92,16 +120,31 @@ wrangler pages publish .
 
 ---
 
+## 🗺️ Roadmap
+
+(COMING SOON)
+
+---
+
 ## 🤝 Contributing
 
-Pull requests and ideas welcome!
+Want to improve FinBento or suggest a new feature? Awesome! We welcome all kinds of contributions, so let's make FinBento better together! 
+
+To get started:
 
 1. Fork the repo
-2. Create a branch (`git checkout -b feature/your-feature`)
-3. Commit with clear messages
-4. Push to your fork and open a PR
+2. Create a branch (`git checkout -b feature/awesome-thing`)
+3. Make your changes & commit with clear messages
+4. Push to your fork (`git push origin feature/awesome-thing`)
+5. Open a Pull Request against `main`
 
-> Whether it's bug fixes, content ideas, blog posts, or just feedback — we're all ears. Let's make FinBento better together!
+Be sure to:
+
+- Review [existing issues](https://github.com/byte-bento/finbento/issues) and add your thoughts
+- Label any bugs you find or feature ideas you want to tackle
+- Follow consistent code style (ESLint rules if you introduce new JS)
+
+🪄 Whether it’s code, docs, or just ideas - contributions of all kinds are appreciated. 
 
 ---
 
