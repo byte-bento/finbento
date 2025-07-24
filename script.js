@@ -153,6 +153,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   function getSavedArticles() {
     return JSON.parse(localStorage.getItem("savedArticles") || "{}");
   }
+
+   // 🔄 Auto-refresh every 10 minutes (600,000ms)
+  setInterval(() => {
+    location.reload();
+  }, 600000);
+
+  console.log("🔄 Auto-refresh is enabled for FinBento."); 
 });
 
 function formatDate(pubDate) {
