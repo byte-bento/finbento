@@ -102,7 +102,7 @@ a:hover {
 .source-fortune { background-color: #333333; }
 
 .summary {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #444;
   display: -webkit-box;
   -webkit-line-clamp: 5;
