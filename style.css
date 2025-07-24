@@ -420,7 +420,14 @@ body.focus-mode .card {
 
 body.focus-mode .card-footer {
   margin-top: 0;
-  padding-top: 0.25rem;
+  padding-top: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+body.focus-mode .card .source {
+  margin-bottom: 0;
 }
 
 body.focus-mode.dark-mode .card {
