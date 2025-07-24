@@ -699,22 +699,26 @@ body.dark-mode .toast {
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
 }
 
-.blog-list {
-  list-style: none;
-  padding-left: 0;
-}
-
 .blog-list li {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
-.blog-list a {
-  color: #114488;
+.blog-list li a {
   font-weight: 600;
+  color: #114488;
   text-decoration: none;
 }
 
-.blog-list a:hover {
+.blog-list li a:hover {
   text-decoration: underline;
+  color: #006d77;
+}
+
+.blog-date {
+  display: block;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.25rem;
 }
