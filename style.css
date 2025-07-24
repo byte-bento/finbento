@@ -407,7 +407,7 @@ body.dark-mode.focus-mode .card {
 
 /* Minimal article style for Focus Mode */
 body.focus-mode .card {
-  background-color: #fffceb;
+  background-color: #f4f6f8;
   border: none;
   box-shadow: none;
   padding: 0.5rem 1rem 1rem;
