@@ -412,11 +412,11 @@ body.focus-mode .card {
   box-shadow: none;
   padding: 0.5rem 0;
   margin-bottom: 1rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: none;
 }
 
 body.focus-mode.dark-mode .card {
-  border-bottom: 1px solid #333;
+  border-bottom: none;
 }
 
 body.focus-mode .card h2 {
