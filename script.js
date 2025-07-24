@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           saved[id] = { title, link, source, date, summary };
           localStorage.setItem("savedArticles", JSON.stringify(saved));
           renderSavedArticles();
-          showToast("Saved to Read Later");
+          showToast("📌 Article saved!");
         }
       });
     });
