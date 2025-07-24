@@ -722,3 +722,17 @@ body.dark-mode .toast {
   color: #666;
   margin-top: 0.25rem;
 }
+
+.blog-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #114488;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.blog-link:hover {
+  text-decoration: underline;
+  color: #0b5a8d;
+}
