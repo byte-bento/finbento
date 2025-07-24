@@ -723,13 +723,16 @@ body.dark-mode .toast {
   margin-top: 0.25rem;
 }
 
+.blog-link-wrapper {
+  margin-top: 0.4rem;  /* tighter spacing */
+  margin-bottom: 0.5rem;
+}
+
 .blog-link {
   font-size: 1rem;
   font-weight: 500;
   color: #114488;
   text-decoration: none;
-  display: inline-block;
-  margin-top: 0.5rem;
 }
 
 .blog-link:hover {
