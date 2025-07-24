@@ -116,6 +116,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           saved[id] = { title, link, source, date, summary };
           localStorage.setItem("savedArticles", JSON.stringify(saved));
           renderSavedArticles();
+          showToast("Saved to Read Later");
         }
       });
     });
@@ -161,6 +162,16 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   console.log("🔄 Auto-refresh is enabled for FinBento."); 
 });
+
+function showToast(message = "Saved!") {
+  const toast = document.getElementById("toast");
+  if (!toast) return;
+  toast.textContent = message;
+  toast.classList.remove("hidden");
+  setTimeout(() => {
+    toast.classList.add("hidden");
+  }, 2000);
+}
 
 function formatDate(pubDate) {
   const date = new Date(pubDate);
