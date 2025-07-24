@@ -407,24 +407,33 @@ body.dark-mode.focus-mode .card {
 
 /* Minimal article style for Focus Mode */
 body.focus-mode .card {
-  background-color: #f4f6f8;
+  background: none;
   border: none;
   box-shadow: none;
-  padding: 0.5rem 1rem 1rem;
-  margin-bottom: 1.2rem;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+body.focus-mode.dark-mode .card {
+  border-bottom: 1px solid #333;
 }
 
 body.focus-mode .card h2 {
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.25rem;
+  margin: 0 0 0.25rem;
+  line-height: 1.4;
   color: #114488;
 }
 
 body.focus-mode .source {
-  font-size: 0.8rem;
-  color: #555;
-  margin-top: 0;
+  font-size: 0.75rem;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
   margin-bottom: 0.5rem;
 }
 
