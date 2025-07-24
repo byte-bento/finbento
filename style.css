@@ -102,10 +102,15 @@ a:hover {
 .source-fortune { background-color: #333333; }
 
 .summary {
-  font-size: 0.9rem;
-  margin: 0;
+  font-size: 1rem;
   color: #444;
-  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+  max-height: calc(1.5em * 5); /* fallback in case clamp fails */
 }
 
 .filter-bar {
