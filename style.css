@@ -1,7 +1,7 @@
 /* Site header */
 .site-header {
   text-align: center;
-  padding: 2rem 1rem 1rem; /* tighten bottom padding */
+  padding: 2rem 1rem 2rem; /* tighten bottom padding */
   background: #f0f2f5;
   border-bottom: 1px solid #ddd;
   margin-bottom: 1.5rem;
@@ -724,8 +724,7 @@ body.dark-mode .toast {
 }
 
 .blog-link-wrapper {
-  margin-top: 0.4rem;  /* tighter spacing */
-  margin-bottom: 0.5rem;
+  margin: 1.25rem 0 1.25rem;
 }
 
 .blog-link {
