@@ -647,7 +647,7 @@ body.dark-mode .drawer-actions button:hover {
   top: 20px;
   left: 50%;
   transform: translateX(-50%) scale(1);
-  background-color: #00695c;
+  background-color: #3a3a3a;
   color: #000;
   padding: 10px 22px;
   border-radius: 8px;
