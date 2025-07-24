@@ -55,8 +55,6 @@ Curated from trustworthy sources. Filtered for clarity.
 
 (COMING SOON)
 
----
-
 ## ✨ Features
 
 - 📈 **Real-time finance headlines** from trusted sources (MarketWatch, Seeking Alpha, CNBC, WSJ, etc.)
@@ -69,8 +67,6 @@ Curated from trustworthy sources. Filtered for clarity.
 - ✍️ **Built-in blog** — behind-the-scenes insights and updates
 - ⚡ **Lightweight, fast, and serverless** — deployed via Cloudflare Workers
 
----
-
 ## 💻 Tech Stack
 
 🌀 **Hosted entirely via Cloudflare Workers** – combines serverless API logic and static content delivery in a single deployment.
@@ -81,50 +77,50 @@ Curated from trustworthy sources. Filtered for clarity.
 - **Version Control:** Git & GitHub
 - **No frameworks, no build step** — just clean, readable code!
 
----
-
 ## 🏁 Getting Started
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (for local testing, optional)
-- [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/) for deployment
+- [Node.js](https://nodejs.org/en) (for local Worker simulation, optional)
+- [Wrangler CLI](https://developers.cloudflare.com/workers/cli-wrangler/) (install instructions and CLI reference)
+- A free [Cloudflare account](https://dash.cloudflare.com/sign-up) with Workers enabled
 
 ### Installation
 
+1. **Clone the repo**
 ```bash
-git clone https://github.com/your-org/finbento.git
+git clone https://github.com/byte-bento/finbento.git
 cd finbento
 ```
 
-### Install Wrangler (if not already)
-
+2. **Install Wrangler (if not already)**
 ```bash
 npm install -g @cloudflare/wrangler
 ```
 
 ### Development
+> You can preview the site and Workers locally using Wrangler.
 
 ```bash
+# Log into Cloudflare
 wrangler login
-wrangler pages dev
+# Simulate Workers + static assets locally
+wrangler dev
 ```
 
-Then open `http://127.0.0.1:8787` in your browser.
+Open [http://127.0.0.1:8787](http://127.0.0.1:8787) in your browser to see live changes.
 
 ### Deployment
-
+Once you're happy with changes:
 ```bash
-wrangler pages publish .
+# Publish to your Cloudflare account
+wrangler publish
 ```
-
----
 
 ## 🗺️ Roadmap
 
 (COMING SOON)
 
----
 
 ## 🤝 Contributing
 
@@ -146,7 +142,6 @@ Be sure to:
 
 🪄 Whether it’s code, docs, or just ideas - contributions of all kinds are appreciated. 
 
----
 
 ## 📁 Repo Structure
 
@@ -159,17 +154,14 @@ finfav.png           # App icon/logo
 /blog/               # Blog posts (markdown or html)
 ```
 
----
-
 ## 📄 License
 
-MIT — [View license »](LICENSE)
-
----
+This project is licensed under the [MIT License](LICENSE).  
+Feel free to use, share, and remix—just give credit where it’s due.
 
 ## 🙏 Acknowledgements
 
-- Built with love and caffeine
-- Inspired by simple, useful dashboards like ByteBento
-- Thanks to Cloudflare Workers for powering the fast delivery
-- Made with 🧠 + 📊 + ❤️
+- Inspired by the simplicity of serverless dashboards
+- Thanks to Cloudflare Workers for the magic edge compute
+- Hats off to all open-source libraries and contributors
+- Made with ☕, 🧠, and 💻
