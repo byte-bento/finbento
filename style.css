@@ -200,6 +200,10 @@ body.focus-mode .focus-button {
   border-color: #4da6a6;
 }
 
+body.focus-mode .save-button {
+  margin-top: 0.2rem;
+}
+
 /* Toggle bar */
 .toggle-bar {
   text-align: center;
@@ -412,6 +416,11 @@ body.focus-mode .card {
   box-shadow: none;
   padding: 0.5rem 0;
   margin-bottom: 1rem;
+}
+
+body.focus-mode .card-footer {
+  margin-top: 0;
+  padding-top: 0.25rem;
 }
 
 body.focus-mode.dark-mode .card {
@@ -650,7 +659,7 @@ body.dark-mode .drawer-actions button:hover {
 
 .toast {
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%) scale(1);
   background-color: #f5c042;       /* soft golden yellow */
