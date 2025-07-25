@@ -5,22 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FinBento Blog</title>
   <link rel="stylesheet" href="/style.css" />
+  <style>
+    body {
+      max-width: 720px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      font-family: system-ui, sans-serif;
+      line-height: 1.7;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: #114488;
+      font-size: 0.95rem;
+    }
+    .blog-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .blog-list li {
+      margin-bottom: 1.2rem;
+    }
+    .blog-list a {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #114488;
+      text-decoration: none;
+    }
+    .blog-list a:hover {
+      text-decoration: underline;
+    }
+    .date {
+      display: inline-block;
+      margin-left: 0.5rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+    h1 {
+      margin-bottom: 1rem;
+      color: #114488;
+    }
+  </style>
 </head>
 <body>
-  <div class="site-header">
-    <h1>📝 FinBento Blog</h1>
-    <p>Thoughtful updates, news insights, and behind-the-scenes notes.</p>
-  </div>
-
-  <main>
-    <ul class="blog-list">
-  <li>
-    <a href="/blog/why-we-built-finbento.html">🛠️ Why We Built FinBento</a>
-    <span class="blog-date">July 24, 2025</span>
-  </li>
-  <!-- Add more posts below like this -->
-</ul>
-    <p><a href="/">← Back to FinBento</a></p>
-  </main>
+  <a href="/" class="back-link">← Back to FinBento</a>
+  <h1>📘 FinBento Blog</h1>
+  <ul class="blog-list">
+    <li><a href="/blog/why-we-built.html">🧠 Why We Built FinBento</a> <span class="date">Jul 25, 2025</span></li>
+    <li><a href="/blog/what-sources-we-use.html">📊 What Sources We Use</a> <span class="date">Jul 23, 2025</span></li>
+  </ul>
 </body>
 </html>
