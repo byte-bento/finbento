@@ -32,21 +32,21 @@
 
 ## 📋 Table of Contents
 
-- 🌐 [Demo](#demo)
+- [Demo](#demo)
   - [Screenshot](#screenshot)
   - [GIF](#gif)
-- ✨ [Features](#features)
-- 💻 [Tech Stack](#tech-stack)
-- 🏁 [Getting Started](#getting-started)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Development](#development)
   - [Deployment](#deployment)
-- 🗺️ [Roadmap](#roadmap)
-- 🤝 [Contributing](#contributing)
-- 📁 [Repo Structure](#repo-structure)
-- 📄 [License](#license)
-- 🙏 [Acknowledgements](#acknowledgements)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [Repo Structure](#repo-structure)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 ---
 
