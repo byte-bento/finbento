@@ -14,7 +14,11 @@
 
 📰 Real-time finance news • 🧘 Focus Mode • 🌓 Dark Mode • 🔁 Auto-Refresh • 📁 Saved Articles • ✍️ Blog • ⚡ Fast, Static, Serverless
 
-![FinBento Icon](finfav.png)
+<p align="center">
+  <a href="https://finbento.com">
+    <img src="./og-image.png" alt="FinBento Banner" width="600" />
+  </a>
+</p>
 
 > A bite-sized finance and investing news reader. FinBento keeps you in the loop — with clean headlines, curated sources, and no extra noise. Stay focused, stay informed.
 
