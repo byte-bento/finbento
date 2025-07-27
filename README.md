@@ -5,7 +5,7 @@
 ![Project Type](https://img.shields.io/badge/type-project-blue)
 ![Platform](https://img.shields.io/badge/platform-Cloudflare%20Workers-black)
 ![Hosting](https://img.shields.io/badge/hosting-Cloudflare-orange)
-![Focus](https://img.shields.io/badge/focus-tech%20news-9cf)
+![Focus](https://img.shields.io/badge/focus-financial%20news-9cf)
 ![Interface](https://img.shields.io/badge/interface-frontend--only-lightgrey)
 ![Architecture](https://img.shields.io/badge/architecture-serverless-yellow)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
